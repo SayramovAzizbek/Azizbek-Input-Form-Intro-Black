@@ -1,0 +1,205 @@
+:root {
+    --main-white-color: #ffffff;
+    --main-black-color: #000000;
+    --main-error-color: #F03535;
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/inter-v11-latin-regular.woff2') format('woff2'),
+        url('../fonts/inter-v11-latin-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/inter-v11-latin-500.woff2') format('woff2'),
+        url('../fonts/inter-v11-latin-500.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/inter-v11-latin-600.woff2') format('woff2'),
+        url('../fonts/inter-v11-latin-600.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/inter-v11-latin-700.woff2') format('woff2'),
+        url('../fonts/inter-v11-latin-700.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Arial', sans-serif;
+    background-color: #F1F4FF;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.input-section {
+    padding: 80px 144px;
+}
+
+.input-part {
+    display: flex;
+}
+
+.input-info {
+    margin-right: 10px;
+    color: var(--main-white-color);
+}
+
+.info-text {
+    width: 570px;
+    padding: 60px 121px 203px 60px;
+    background-image: url("../images/code-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px 20px 0 0;
+}
+
+.input-info span {
+    padding: 6px 15px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    opacity: 0.8;
+    border: 1px solid var(--main-white-color);
+    border-radius: 41px;
+}
+
+h1 {
+    margin: 65px 0 25px 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+}
+
+.info-text-paragraph {
+    width: 347px;
+}
+
+.info-text-paragraph p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.input-info a {
+    display: flex;
+    justify-content: center;
+    padding: 29px 0px;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 23px;
+    color: var(--main-white-color);
+    background-color: #4DC490;
+    border-radius: 0px 0px 20px 20px;
+    text-decoration: none;
+}
+
+.input-form {
+    width: 570px;
+    padding: 55px 60px 40px 60px;
+    background-color: var(--main-white-color);
+    border-radius: 20px;
+}
+
+.input-form h2 {
+    margin-bottom: 79px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    color: var(--main-black-color);
+}
+
+.form-input {
+    display: block;
+    width: 450px;
+    border: none;
+    border-bottom: 2px solid var(--main-black-color);
+    padding: 5px 0 10px 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--main-black-color);
+    caret-color: var(--main-black-color);
+}
+
+.form-input:focus {
+    border-bottom: 2px solid var(--main-black-color);
+}
+
+.form-input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #555555;
+}
+
+.form-input:not(:placeholder-shown):not(:focus):invalid {
+    color: var(--main-error-color);
+    border-bottom: 2px solid var(--main-error-color);
+}
+
+.main-form .form-label span {
+    display: flex;
+    justify-content: flex-end;
+    margin: 4px 0 5px 0;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    color: var(--main-error-color);
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+
+.main-form .form-input:not(:placeholder-shown):not(:focus):invalid+span {
+    opacity: 1;
+}
+
+.form-btn {
+    margin: 46px 0 8px 0;
+    width: 100%;
+    padding: 20px 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    border-radius: 10px;
+    background: #655AF2;
+    color: var(--main-white-color);
+    border: none;
+    cursor: pointer;
+}
+
+.input-form p {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    color: #555555;
+    text-align: center;
+}
+
+.input-form p a {
+    color: #f00;
+}
